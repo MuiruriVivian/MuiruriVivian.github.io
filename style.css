@@ -286,7 +286,8 @@ section {
 
 /* Social Links */
 .social-links {
-    margin-top: 32px;
+    margin-top: 12px;
+    margin-bottom: 24px;
     display: flex;
     gap: 16px;
 }
