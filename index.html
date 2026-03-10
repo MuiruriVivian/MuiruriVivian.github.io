@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title><br><br>Vivian Muiruri | Data Scientist & Project Strategist</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation -->
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <a href="#hero-split" class="nav-brand">[VM]</a>
+
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="#hero-split" class="nav-link">Home</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link contact-nav-btn">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-link');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+
+    <!-- Split Hero Section (Full Width) -->
+    <section id="hero-split">
+        <div class="hero-left">
+            <h1 class="name">Vivian Muiruri</h1>
+            <span class="professional-title">Data Scientist specializing in Strategic Planning & Quantitative
+                Analysis</span>
+
+            <p class="hero-summary">
+                I am an experienced Project Officer and Data Scientist with over 5 years of expertise in driving
+                organizational growth. My work focuses on transforming complex datasets into actionable strategies,
+                enhancing program efficiency, and fostering innovation through evidence-based decision-making.
+            </p>
+
+            <ul class="focus-pills">
+                <li class="focus-pill">Predictive Modeling</li>
+                <li class="focus-pill">Statistical Analysis</li>
+                <li class="focus-pill">Strategic Planning</li>
+                <li class="focus-pill">Process Optimization</li>
+            </ul>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/vivian-muiruri" target="_blank" class="social-icon"
+                    aria-label="LinkedIn">in</a>
+                <a href="#" target="_blank" class="social-icon" aria-label="GitHub">gh</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <!-- Restored Avatar -->
+            <img src="avatar.png" alt="Vivian Muiruri" class="hero-img">
+        </div>
+    </section>
+
+    <div class="main-container">
+
+        <!-- Experience Section (Cards) -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-list">
+
+                <!-- Role 1 -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <span class="exp-title-org">Project Officer — Sprout Africa</span>
+                        <span class="exp-date">Jun 2024 - Present</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Design and implement online data collection tools (Google Forms, Typeform) and analyze data
+                            using SPSS, STATA, and Python.</li>
+                        <li>Develop and manage the business incubation hub, designing boot camp training programs and
+                            mentorship structures.</li>
+                        <li>Lead the development of funding proposals and grant applications to secure financial
+                            support.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <span class="exp-title-org">Quality Assurance Officer — NACOSTI</span>
+                        <span class="exp-date">Apr 2022 - Apr 2023</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Conducted research and authored proposals, journal articles, and books focusing on
+                            quantitative techniques.</li>
+                        <li>Supported the publication of manuscripts and developed curricula for various educational
+                            platforms.</li>
+                        <li>Collaborated with academic professionals to improve teaching methodology and expand
+                            knowledge bases.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <span class="exp-title-org">College Lecturer — Nairobi Aviation College</span>
+                        <span class="exp-date">Mar 2019 - Mar 2022</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Delivered lectures and workshops on Statistics, Quantitative Techniques, and Research
+                            Methods.</li>
+                        <li>Instructed students in Entrepreneurship, Economics, and Monitoring & Evaluation.</li>
+                        <li>Developed comprehensive course materials covering complex data analysis topics.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 4 -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <span class="exp-title-org">Contractor — kasneb</span>
+                        <span class="exp-date">Dec 2018 - Dec 2019</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Verified results in spreadsheets against source documents to ensure 100% accuracy.</li>
+                        <li>Managed database retrieval processes and performed regular data backups.</li>
+                        <li>Ensured quality and reliability of marked examination results.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="experience-list">
+
+                <!-- Moringa School -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <span class="exp-title-org">Data Science — Moringa School</span>
+                        <span class="exp-date">Jun 2024 - Jun 2025</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Specialized training in Data Science, Machine Learning, and Predictive Analytics.</li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/vivian-muiruri/overlay/urn:li:fsd_profileEducation:(ACoAACyNDbUBgKm1bi2VIccG_VMmJpqE5J7jT0M,1017508880)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAACyNDbUBgKm1bi2VIccG_VMmJpqE5J7jT0M&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BXfQg6DUoS6KEMCy4zKMzaQ%3D%3D"
+                                target="_blank" rel="noopener noreferrer">View Credential on LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Academic Data Analysts (ADA) -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <span class="exp-title-org">Data Analytics using R — Academic Data Analysts (ADA)</span>
+                        <span class="exp-date">Oct 2023 - Nov 2023</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Developed strong skills in creating informative charts and plots using
+                            <strong>ggplot2</strong>.
+                        </li>
+                        <li>Mastered data cleaning: handled missing data, outliers, and inconsistencies.</li>
+                        <li>Created interactive visualizations and dashboards using <strong>plotly</strong>.</li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/vivian-muiruri/overlay/urn:li:fsd_profileEducation:(ACoAACyNDbUBgKm1bi2VIccG_VMmJpqE5J7jT0M,1017528065)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAACyNDbUBgKm1bi2VIccG_VMmJpqE5J7jT0M&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BXfQg6DUoS6KEMCy4zKMzaQ%3D%3D"
+                                target="_blank" rel="noopener noreferrer">View Credential on LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kenya Institute of Management (KIM) -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <span class="exp-title-org">Diploma in Project Management — Kenya Institute of Management
+                            (KIM)</span>
+                        <span class="exp-date">2017 - 2018</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Gained comprehensive understanding of project lifecycle management and execution activities.
+                        </li>
+                        <li>Grade: Average (C)</li>
+                    </ul>
+                </div>
+
+                <!-- University of Nairobi -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <span class="exp-title-org">Bachelor's Degree in Economics and Statistics — University of
+                            Nairobi</span>
+                        <span class="exp-date">Sep 2014 - Dec 2017</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Developed a solid foundation in economics and statistics, focusing on quantitative analysis
+                            and economic modeling.</li>
+                        <li>Gained hands-on experience with statistical software such as STATA, SPSS, and MS Excel.</li>
+                        <li>learned research methodologies applicable to financial analysis, policy development, and
+                            data-driven decision-making.</li>
+                        <li><strong>Activities:</strong> Member of Economics Students Association (ECOSA), Participant
+                            in Data Analytics and Research Group.</li>
+                        <li>Grade: Second Class Honors (Lower Division)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical Proficiency Section (Grid) -->
+        <section id="skills">
+            <h2>Technical Proficiency</h2>
+            <div class="skills-grid">
+
+                <!-- Category 1: Methods -->
+                <div class="skill-card">
+                    <h3>Data Science & Analytics</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Analytics</li>
+                        <li class="skill-item">Data Analysis</li>
+                        <li class="skill-item">Data Analytics</li>
+                        <li class="skill-item">Data Cleaning</li>
+                        <li class="skill-item">Data Collection</li>
+                        <li class="skill-item">Data Manipulation</li>
+                        <li class="skill-item">Machine Learning</li>
+                        <li class="skill-item">Pandas (Software)</li>
+                        <li class="skill-item">Python</li>
+                        <li class="skill-item">Quantitative Research</li>
+                        <li class="skill-item">Research</li>
+                        <li class="skill-item">Statistical Programming</li>
+                        <li class="skill-item">Statistics</li>
+                    </ul>
+                </div>
+
+                <!-- Category 2: Tools -->
+                <div class="skill-card">
+                    <h3>Tools & Visualization</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Data Importing & Exporting</li>
+                        <li class="skill-item">Data Visualization</li>
+                        <li class="skill-item">Microsoft Excel</li>
+                        <li class="skill-item">Microsoft Office</li>
+                        <li class="skill-item">Tableau</li>
+                        <li class="skill-item">Version Control</li>
+                    </ul>
+                </div>
+
+                <!-- Category 3: PM -->
+                <div class="skill-card">
+                    <h3>Project Management</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Agile Methodologies</li>
+                        <li class="skill-item">Auditing</li>
+                        <li class="skill-item">Data Entry</li>
+                        <li class="skill-item">Monitoring & Evaluation</li>
+                        <li class="skill-item">Programme Office</li>
+                        <li class="skill-item">Project Management</li>
+                        <li class="skill-item">Proposal Writing</li>
+                        <li class="skill-item">Verification & Validation (V&V)</li>
+                    </ul>
+                </div>
+
+                <!-- Category 4: Professional -->
+                <div class="skill-card">
+                    <h3>Professional Efficiency</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">Analytical Skills</li>
+                        <li class="skill-item">Classroom & Online Teaching</li>
+                        <li class="skill-item">Collaborative Research</li>
+                        <li class="skill-item">Course Management</li>
+                        <li class="skill-item">Office Administration</li>
+                        <li class="skill-item">Presentation Skills</li>
+                        <li class="skill-item">Problem Solving</li>
+                        <li class="skill-item">Public Speaking</li>
+                        <li class="skill-item">Student Counseling</li>
+                        <li class="skill-item">Teamwork</li>
+                        <li class="skill-item">Time Management</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer / Contact -->
+        <div id="contact" class="contact-section">
+            <h3>Ready to collaborate?</h3>
+            <p>I am currently open to new opportunities in Data Science and Strategic Project Management.</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vivian@sproutafrica.net" class="contact-btn"
+                target="_blank">Get In Touch</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Vivian Muiruri</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
